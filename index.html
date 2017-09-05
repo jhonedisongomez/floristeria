@@ -19,7 +19,7 @@
         <style>
         .header{
             color: white;
-            background: var(--paper-toolbar-background, var(--primary-color));
+            background: #F06292;
         }
         .header-menu{
             color: white;
@@ -43,60 +43,14 @@
 
         </style>
                 
-    <app-header reveals >
+    <app-header>
         <app-toolbar class="header">
             <paper-icon-button icon="menu" onclick="drawer.toggle()"></paper-icon-button>
                     
         </app-toolbar>
-        <h1 align="center" style="    color: white;
-            margin-top: 60%;
-            position: absolute;
-            font-family: 'Boogaloo', cursive"><span>Floristeria mi angel</span>
-        </h1>
-        <img src="img/flower.jpg" style="height:100%;width:100%;">
+
+        <img src="img/flor-escri.jpg" style="height:100%;width:100%;">
         
-        <div style="padding: 1px;;height: 100%;background: white" align = "center">
-            <h1 style="font-family: 'Boogaloo', cursive;">Algunas creaciones</h1>
-
-
-            <div id="example-full-width-container" align="center">
-                
-            
-                <iron-image src="img/flower.jpg"  id="example-half-width" style="width:300px; height:200px;" ></iron-image>
-                <iron-image src="img/flower.jpg"  id="example-half-width" style="width:300px; height:200px;" ></iron-image>
-                <iron-image src="img/flower.jpg"  id="example-half-width" style="width:300px; height:200px;" ></iron-image>
-                <iron-image src="img/flower.jpg"  id="example-half-width" style="width:300px; height:200px;" ></iron-image>
-
-                <iron-image src="img/flower.jpg"  id="example-half-width" style="width:300px; height:200px;" ></iron-image>
-                <iron-image src="img/flower.jpg"  id="example-half-width" style="width:300px; height:200px;" ></iron-image>
-                <iron-image src="img/flower.jpg"  id="example-half-width" style="width:300px; height:200px;" ></iron-image>
-                <iron-image src="img/flower.jpg"  id="example-half-width" style="width:300px; height:200px;" ></iron-image>
-            
-                
-           </div>
-        </div>
-
-        <div style="padding: 1px;;height: 50%;background:white" align="center">
-            <h1 style="font-family: 'Boogaloo', cursive;">Para cualquier evento</h1>
-        </div>
-
-        <div style="padding: 1px;;height: 50%;background: white" align="center">
-            <h1 style="font-family: 'Boogaloo', cursive;">Contactanos</h1>
-        </div>
-
-        <div style="padding: 1px;;height: 10%;background: var(--paper-toolbar-background, var(--primary-color));" align="center">
-            <span style="color: white">Todos los derechos reservados<br>
-                                        develop by Jhon Edison Gomez<br>
-                                    Photo by Melissa Askew on Unsplash</span>
-        </div>
-
-
-
-
-
-
-    
-
         </app-header>
         <app-drawer id="drawer" swipe-open>
                 
@@ -107,11 +61,35 @@
 
         </app-drawer>
                 
-        <sample-content size="10">
-            
+        <sample-content>
+            <div style="padding: 1px;;height: 100%;background: white" align = "center">
+                <h1 style="font-family: 'Boogaloo', cursive;">Algunas creaciones</h1>
+    
+                <div id="example-full-width-container" align="center">
+                
+                    <iron-image src="img/pro.jpg"  id="example-half-width" style="width:400px; height:400px;" ></iron-image>
+                    <iron-image src="img/pro2.jpg"  id="example-half-width" style="width:400px; height:400px;" ></iron-image>
+                    <iron-image src="img/pro3.jpg"  id="example-half-width" style="width:400px; height:400px;" ></iron-image>
+                    
+               </div>
+            </div>
+        
         </sample-content>
         
+        
+        <div style="padding: 1px;;height: 50%;background:white" align="center">
+            <h1 style="font-family: 'Boogaloo', cursive;">Para cualquier evento</h1>
+        </div>
 
+        <div style="padding: 1px;;height: 50%;background: white" align="center">
+            <h1 style="font-family: 'Boogaloo', cursive;">Contactanos</h1>
+        </div>
+
+        <div style="padding: 1px;;height: 10%;background: #F06292;" id="footer" align="center">
+            <span style="color: white">Todos los derechos reservados<br>
+                                        develop by Jhon Edison Gomez<br>
+                                    Photo by Melissa Askew on Unsplash</span>
+        </div>
     </body>
                 
 
