@@ -8,40 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+        <link href="css/general.css" rel="stylesheet">
         <link rel="import" href="elements.html" />
 
     </head>
 
 
     <body fullbleed layout vertical style="margin: 0px">
-
-
-        <style>
-        .header{
-            color: white;
-            background: #F06292;
-        }
-        .header-menu{
-            color: white;
-            background: var(--paper-toolbar-background, var(--primary-color));
-        }
-
-        #example-full-width-container {
-            width: 100%;
-            
-            }
-
-            #example-full-width {
-            width: 100%;
-            --iron-image-width: 100%;
-            }
-
-            #example-half-width {
-            width: 100%;
-            --iron-image-width: 100%;
-            }
-
-        </style>
                 
     <app-header>
         <app-toolbar class="header">
@@ -49,7 +22,12 @@
                     
         </app-toolbar>
 
-        <img src="img/flor-escri.jpg" style="height:100%;width:100%;">
+        <iron-image
+            src="img/flor-escri.jpg"
+            sizing="cover"
+            style="width:100%; height:100%"
+            class="image-header">
+        </iron-image>
         
         </app-header>
         <app-drawer id="drawer" swipe-open>
@@ -62,14 +40,33 @@
         </app-drawer>
                 
         <sample-content>
-            <div style="padding: 1px;;height: 100%;background: white" align = "center">
+            <div  align = "center" class="catalog">
                 <h1 style="font-family: 'Boogaloo', cursive;">Algunas creaciones</h1>
     
                 <div id="example-full-width-container" align="center">
                 
-                    <iron-image src="img/pro.jpg"  id="example-half-width" style="width:400px; height:400px;" ></iron-image>
-                    <iron-image src="img/pro2.jpg"  id="example-half-width" style="width:400px; height:400px;" ></iron-image>
-                    <iron-image src="img/pro3.jpg"  id="example-half-width" style="width:400px; height:400px;" ></iron-image>
+                    <iron-image src="img/pro.jpg"
+                      alt="this is a example"
+                      id="example-half-width"
+                      style="width:400px; height:400px;"
+                      sizing="cover"
+                      class="image-catalog">
+                    </iron-image>
+
+                    <iron-image
+                        src="img/pro2.jpg"
+                        id="example-half-width"
+                        style="width:400px; height:400px;"
+                        sizing="cover"
+                        class="image-catalog">
+                    </iron-image>
+                    
+                    <iron-image src="img/pro3.jpg"
+                        id="example-half-width"
+                        style="width:400px; height:400px;"
+                        sizing="cover"
+                        class="image-catalog">
+                    </iron-image>
                     
                </div>
             </div>
@@ -77,16 +74,16 @@
         </sample-content>
         
         
-        <div style="padding: 1px;;height: 50%;background:white" align="center">
-            <h1 style="font-family: 'Boogaloo', cursive;">Para cualquier evento</h1>
+        <div style="padding: 1px;height: 50%;background:white" align="center">
+            <h1 style="font-family: 'Boogaloo', cursive;" class="events">Para cualquier evento</h1>
         </div>
 
-        <div style="padding: 1px;;height: 50%;background: white" align="center">
-            <h1 style="font-family: 'Boogaloo', cursive;">Contactanos</h1>
+        <div align="center">
+            <h1 style="font-family: 'Boogaloo', cursive;" class="contact">Contactanos</h1>
         </div>
 
-        <div style="padding: 1px;;height: 10%;background: #F06292;" id="footer" align="center">
-            <span style="color: white">Todos los derechos reservados<br>
+        <div  align="center" class="footer">
+            <span style="color: white" class="footer">Todos los derechos reservados<br>
                                         develop by Jhon Edison Gomez<br>
                                     Photo by Melissa Askew on Unsplash</span>
         </div>
