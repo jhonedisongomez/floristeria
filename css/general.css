@@ -23,7 +23,8 @@
     }
 
 .catalog{
-    padding: 1px;height: 100%;
+    padding: 1px;
+    /*height: 100%;*/
     background: white;
     margin-top: 70px;
 }
@@ -38,7 +39,7 @@
     background: #F06292;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
     
     .catalog{
 
@@ -65,3 +66,14 @@
     }
 
 }
+@media screen and (min-width:800px){
+
+    .events{
+        margin-top: 190px;
+    }
+
+}
+
+
+
+
