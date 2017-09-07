@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <script href="webcomponentsjs/webcomponents-lite.js" ></script>
         <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
         <link href="css/general.css" rel="stylesheet">
         <link rel="import" href="element.vulcanized.html" />
@@ -15,26 +16,63 @@
 
 
     <body fullbleed layout vertical style="margin: 0px">
+
+        
+        <style is="custom-style">
+            .example.preload iron-image {
+
+            background: #ddd;
+            --iron-image-placeholder: {
+                background: #939ed5;
+            };
+            }
+        </style>
+        
                 
     <app-header>
         <app-toolbar class="header">
             <paper-icon-button icon="menu" onclick="drawer.toggle()"></paper-icon-button>
-                    
+                    <paper-menu>
+                    <paper-item>Item 1</paper-item>
+                    <paper-item>Item 2</paper-item>
+                    </paper-menu>
         </app-toolbar>
 
-        <iron-image
-            src="img/flor-escri.jpg"
-            sizing="cover"
-            style="width:100%; height:100%"
-            class="image-header">
-        </iron-image>
+    <div class="content" style="
+        background: black;
+    	height: 100%;
+    	width: 100%;
+        position: absolute;">
+    </div>
+        <div class="example preload">
+            <iron-image
+                preload
+                fade
+                src="img/flor-escri.jpg"
+                sizing="cover"
+                style="width:100%; height:100%;opacity: 0.7;"
+                class="image-header">
+            </iron-image>
+
+        </div>
+        <div class="header-tittle">
+        <span>Floristeria Amor eterno<br>
+            "Todas las flores para un amor verdadero"</span>
+        </div>
         
         </app-header>
         <app-drawer id="drawer" swipe-open>
                 
-            <app-toolbar style="height: 64px;" class="header-menu">
-                <div main-title>Menu</div>
-            </app-toolbar>
+<app-header-layout has-scrolling-region style="width: 300px; height: 400px;">
+  <app-header slot="header" fixed condenses effects="waterfall">
+    <app-toolbar>
+      <div main-title>App name</div>
+    </app-toolbar>
+  </app-header>
+  <div>
+    main content
+  </div>
+</app-header-layout>
                 
 
         </app-drawer>
@@ -48,7 +86,7 @@
                     <iron-image src="img/pro.jpg"
                       alt="this is a example"
                       id="example-half-width"
-                      style="width:400px; height:400px;"
+                      style="width:300px; height:300px;margin-top: 10px;"
                       sizing="cover"
                       class="image-catalog">
                     </iron-image>
@@ -56,14 +94,14 @@
                     <iron-image
                         src="img/pro2.jpg"
                         id="example-half-width"
-                        style="width:400px; height:400px;"
+                        style="width:300px; height:300px;margin-top: 10px;"
                         sizing="cover"
                         class="image-catalog">
                     </iron-image>
                     
                     <iron-image src="img/pro3.jpg"
                         id="example-half-width"
-                        style="width:400px; height:400px;"
+                        style="width:300px; height:300px;margin-top: 10px;"
                         sizing="cover"
                         class="image-catalog">
                     </iron-image>
