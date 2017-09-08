@@ -30,95 +30,72 @@
         </style>
         
                 
-    <app-header>
+    <app-header reveals mode="standard">
         <app-toolbar class="header">
             <paper-icon-button icon="menu" onclick="drawer.toggle()"></paper-icon-button>
-                    <paper-menu>
-                    <paper-item>Item 1</paper-item>
-                    <paper-item>Item 2</paper-item>
-                    </paper-menu>
+
         </app-toolbar>
 
-    <div class="content" style="
-        background: black;
-    	height: 100%;
-    	width: 100%;
-        position: absolute;">
-    </div>
+        <div class="content" style="
+            background: black;
+            height: 100%;
+            width: 100%;
+            position: absolute;">
+        </div>
+
         <div class="example preload">
             <iron-image
                 preload
                 fade
                 src="img/flor-escri.jpg"
                 sizing="cover"
-                style="width:100%; height:100%;opacity: 0.7;"
                 class="image-header">
             </iron-image>
 
         </div>
-        <div class="header-tittle">
-        <span>Floristeria Amor eterno<br>
-            "Todas las flores para un amor verdadero"</span>
+
+        <div class="header-tittle" align="center">
+        <span style="font-family: 'Courgette', cursive;font-size: 55px;">Floristeria Amor eterno</span><br>
+            <span style="font-family: 'Courgette', cursive;font-size: 23px;">"Todas las flores para un amor verdadero"</span>
         </div>
-        
-        </app-header>
-        <app-drawer id="drawer" swipe-open>
-                
-<app-header-layout has-scrolling-region style="width: 300px; height: 400px;">
-  <app-header slot="header" fixed condenses effects="waterfall">
-    <app-toolbar>
-      <div main-title>App name</div>
-    </app-toolbar>
-  </app-header>
-  <div>
-    main content
-  </div>
-</app-header-layout>
-                
 
-        </app-drawer>
-                
-        <sample-content>
-            <div  align = "center" class="catalog">
-                <h1 style="font-family: 'Boogaloo', cursive;">Algunas creaciones</h1>
-    
-                <div id="example-full-width-container" align="center">
-                
-                    <iron-image src="img/pro.jpg"
-                      alt="this is a example"
-                      id="example-half-width"
-                      style="width:300px; height:300px;margin-top: 10px;"
-                      sizing="cover"
-                      class="image-catalog">
-                    </iron-image>
+        <div  align = "center" class="catalog">
+            <h1 style="font-family: 'Boogaloo', cursive;">Algunas creaciones</h1>
 
-                    <iron-image
-                        src="img/pro2.jpg"
-                        id="example-half-width"
-                        style="width:300px; height:300px;margin-top: 10px;"
-                        sizing="cover"
-                        class="image-catalog">
-                    </iron-image>
-                    
-                    <iron-image src="img/pro3.jpg"
-                        id="example-half-width"
-                        style="width:300px; height:300px;margin-top: 10px;"
-                        sizing="cover"
-                        class="image-catalog">
-                    </iron-image>
-                    
-               </div>
+            <div id="example-full-width-container" align="center">
+            
+                <iron-image src="img/pro.jpg"
+                    alt="this is a example"
+                    id="example-half-width"
+                    sizing="cover"
+                    style="width:300px; height:300px;margin-top: 10px;"
+                    class="image-catalog">
+                </iron-image>
+
+                <iron-image
+                    src="img/pro2.jpg"
+                    id="example-half-width"
+                    style="width:300px; height:300px;margin-top: 10px;"
+                    sizing="cover"
+                    class="image-catalog">
+                </iron-image>
+                
+                <iron-image src="img/pro3.jpg"
+                    id="example-half-width"
+                    style="width:300px; height:300px;margin-top: 10px;"
+                    sizing="cover"
+                    class="image-catalog">
+                </iron-image>
+                
             </div>
-        
-        </sample-content>
-        
+        </div>
         
         <div style="padding: 1px;height: 50%;background:white" align="center">
             <h1 style="font-family: 'Boogaloo', cursive;" class="events">Para cualquier evento</h1>
-            <span style="font-family: 'Courgette', cursive;">
+            <div style="font-family: 'Courgette', cursive;width: 50%;font-size: 27px;">
                 Creamos toda clase de arreglos para un matrimonio, dia de las madres, para esa persona amada,
                 para generar una sonrisa...
-            </span>
+            </div>
         </div>
 
         <div align="center">
@@ -129,7 +106,11 @@
             <span style="color: white" class="footer">Todos los derechos reservados<br>
                                         develop by Jhon Edison Gomez<br>
                                     Photo by Melissa Askew on Unsplash</span>
-        </div>
+        </div>    
+
+    </app-header>
+
+        
     </body>
                 
 
