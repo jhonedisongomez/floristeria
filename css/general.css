@@ -1,3 +1,8 @@
+body{
+    overflow-x:hidden;
+    margin: 0px;
+}
+
 --iron-image-placeholder{
     background: #939ed5;
 }
