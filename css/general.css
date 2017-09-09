@@ -47,9 +47,16 @@ width: 100%;
     opacity: 0.6;
 }
 
+.menu-it{
+    color: #212121;
+}
+
+a{
+    text-decoration: none;
+}
+
 .catalog{
     padding: 1px;
-    /*height: 100%;*/
     background: white;
     margin-top: 70px;
 }
@@ -99,6 +106,10 @@ width: 100%;
 
     .app-header-0{
         height: 50%;
+    }
+
+    .footer{
+        height: 17%;
     }
 
 }

@@ -4,9 +4,9 @@
 
     <head>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            
         <script href="webcomponentsjs/webcomponents-lite.js" ></script>
         <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
@@ -22,10 +22,10 @@
         <style is="custom-style">
             .example.preload iron-image {
 
-            background: #ddd;
-            --iron-image-placeholder: {
-                background: #939ed5;
-            };
+                background: #ddd;
+                --iron-image-placeholder: {
+                    background: #939ed5;
+                };
             }
         </style>
         
@@ -33,7 +33,7 @@
     <app-header reveals mode="standard">
         <app-toolbar class="header">
             <paper-icon-button icon="menu" onclick="drawer.toggle()"></paper-icon-button>
-
+            <div main-title></div>
         </app-toolbar>
 
         <div class="content" style="
@@ -109,6 +109,37 @@
         </div>    
 
     </app-header>
+
+    <app-drawer id="drawer" swipe-open>
+        
+        <app-toolbar class="header">
+            <div main-title>Menu</div>
+            <paper-icon-button icon="close"></paper-icon-button>
+        </app-toolbar>
+        
+        <div>
+            
+    <paper-menu >
+        <a href="">
+            <paper-item raised class="menu-it"><iron-icon icon="home" style="color: #F06292;"></iron-icon>Inicio</paper-item>
+        </a>
+        <a href="">
+            <paper-item raised class="menu-it"><iron-icon icon="image" style="color: #F06292;"></iron-icon>Nuestras creaciones</paper-item>
+        </a>
+        <a href="">
+            <paper-item raised class="menu-it"><iron-icon icon="event" style="color: #F06292;"></iron-icon>Eventos</paper-item>
+        </a>
+
+        <a href="">
+            <paper-item raised class="menu-it"><iron-icon icon="edit" style="color: #F06292;"></iron-icon>Contactanos</paper-item>
+        </a>
+
+    </paper-menu>
+            
+
+
+        </div>
+    </app-drawer>
 
         
     </body>
