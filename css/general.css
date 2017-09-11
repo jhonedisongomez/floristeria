@@ -120,7 +120,18 @@ a{
     }
 
 }
+@media screen and (min-width:1300px) {
+    .header-tittle {
+        margin-top: -19em;
+        position: absolute;
+        color: white;
+        margin-left: 25em;
+    }
 
+    .events {
+        margin-top: 0px;
+    }
+}
 
 
 
